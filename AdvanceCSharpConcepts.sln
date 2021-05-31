@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsConsoleApp", "Gener
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericApp", "GenericApp", "{D4E48DD2-C6DF-43A3-B7DD-7821FF45DB87}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericCSV", "GenericCSV", "{24405E85-53B9-4AE9-8585-67327E2FA62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCsvApp", "GenericCsvApp\GenericCsvApp.csproj", "{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{C75D7AF7-1026-4B39-BC1F-CCD8A1D0545D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75D7AF7-1026-4B39-BC1F-CCD8A1D0545D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75D7AF7-1026-4B39-BC1F-CCD8A1D0545D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C75D7AF7-1026-4B39-BC1F-CCD8A1D0545D} = {D4E48DD2-C6DF-43A3-B7DD-7821FF45DB87}
+		{F40FC1B7-7B49-4A26-9EB3-4C0E54BB7D0B} = {24405E85-53B9-4AE9-8585-67327E2FA62C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E466B166-61A8-4B2A-9737-13F3EEEE7C08}
