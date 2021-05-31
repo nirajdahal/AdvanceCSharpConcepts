@@ -39,11 +39,15 @@ namespace GenericCsvApp.Helper
 
                 foreach (var col in properties)
                 {
+
                     row += "," + col.GetValue(item, null);
                 }
 
                 BadWordsEvents<T> checker = new BadWordsEvents<T>();
+                checker.BadWordDetected += BadWordsEvents<T>.Checker_BadWordDetected;
                 var hasBadWord = checker.BadWordDetector(row, item);
+
+                
                 if (!hasBadWord)
                 {
                     row = row.Substring(1);
@@ -53,6 +57,6 @@ namespace GenericCsvApp.Helper
             }
         }
 
-        
+      
     }
 }

@@ -1,4 +1,5 @@
 ﻿using GenericCsvApp.Contracts;
+using GenericCsvApp.Events;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,9 +16,12 @@ namespace GenericCsvApp.Helper
             var properties =  FileHandlerHelper<T>.GetPropertiesOfGenericClass();
             FileHandlerHelper<T>.AddPropertyToRows(properties, rows);
             FileHandlerHelper<T>.AddValueOfProperty(properties, rows, items);
-
+           
             File.WriteAllLines("C:/Users/tulshi/source/repos/AdvanceCSharpConcepts/GenericCsvApp/writefile.csv", rows);
         }
 
+     
+
+    
     }
 }
