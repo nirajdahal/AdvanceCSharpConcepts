@@ -4,9 +4,9 @@ using System.Text;
 
 namespace GenericCsvApp.Contracts
 {
-    public interface ICsvHelper<T>
+    public interface IDataAccess<T>
     {
-         void CreateFile(List<T> items);
+         void CreateFile(List<T> items, string path);
 
     }
 }
