@@ -15,8 +15,16 @@ namespace DelegatesGenericFilter
             new Person {Name="NoName", Age =23}
             
             };
-            var filteredPeople =  people.FilterPeople(hero => hero.Name.ToLower().StartsWith("n"));
+            var filteredPeople =  people.FilterTtems(x => x.Name.ToLower().StartsWith("r"));
 
+            List<Hero> heros = new List<Hero>()
+            {
+
+                new Hero{CanFly= true, CharacterName="Shaktiman"},
+                new Hero{CanFly= true, CharacterName="Bat"},
+                new Hero{CanFly= false, CharacterName="Captain America."},
+            };
+            var filteredHeros = heros.FilterTtems(x => x.CanFly);
         }
     }
 
