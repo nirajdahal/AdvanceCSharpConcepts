@@ -25,6 +25,9 @@ namespace DelegatesGenericFilter
                 new Hero{CanFly= false, CharacterName="Captain America."},
             };
             var filteredHeros = heros.FilterTtems(x => x.CanFly);
+
+            List<string> foods = new List<string>() { "Momo", "Salad", "Vegetables"};
+            var filteredFoods  = foods.FilterTtems(x => x.StartsWith("M"));
         }
     }
 
